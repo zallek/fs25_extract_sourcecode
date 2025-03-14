@@ -15,18 +15,17 @@ Run this command to create a new folder named "l64" containing raw games sources
 ```
 quickbms\quickbms.exe extract_fs25_sourcecode\gar_giants.txt "C:\Program Files (x86)\Steam\steamapps\common\Farming Simulator 25\dataS.gar" l64
 ```
-This should c
 
 ## 3. Decode scripts l64 files
 
-Run this command to decode in place the .l64 files (files content are replaced with decoded content)
+Run this command to decode the .l64 files in place (files' content is replaced with decoded content)
 ```
 python extract_fs25_sourcecode\l64Decoder.py l64
 ```
 
 ## 4. Decompile lua scripts
 
-Make sure you have nightly version installed
+Make sure you have the nightly version installed
 ```
 rustup install nightly
 ```
@@ -37,9 +36,9 @@ python extract_fs25_sourcecode\decompile_lua.py medal l64 <output_path>
 ```
 
 ## 5. Enjoy
-That's it! You should now have a folder contains all FS25 lua scripts.
+That's it! You should now have a folder containing all FS25 lua scripts.
 
-Note: the local variables and functions arguments names are offuscated, but the functions and global variables names are not.
+Note: The names of the local variables and functions arguments are obfuscated, but the names of the functions and global variables are not.
 
 
 
